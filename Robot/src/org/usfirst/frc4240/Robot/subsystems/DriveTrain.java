@@ -56,7 +56,7 @@ public class DriveTrain extends Subsystem {
         // setDefaultCommand(new MySpecialCommand());
 }
     
-public void takeJoystickInputs(double left, double right) {
+    	public void takeJoystickInputs(double left, double right) {
     
 	    	robotDrive.arcadeDrive(org.usfirst.frc4240.Robot.Robot.oi.logitech);
 			//robotDrive.tankDrive(Robot.oi.logitech.getRawAxis(1), Robot.oi.logitech.getRawAxis(5));
