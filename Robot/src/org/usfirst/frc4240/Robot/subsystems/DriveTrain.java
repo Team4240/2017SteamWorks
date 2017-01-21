@@ -16,7 +16,7 @@ import org.usfirst.frc4240.Robot.Robot;
 import org.usfirst.frc4240.Robot.RobotMap;
 import org.usfirst.frc4240.Robot.commands.*;
 
-import edu.wpi.first.wpilibj.CANTalon;
+import com.ctre.*;
 import edu.wpi.first.wpilibj.RobotDrive;
 import edu.wpi.first.wpilibj.Ultrasonic;
 import edu.wpi.first.wpilibj.command.Subsystem;
@@ -65,7 +65,7 @@ public class DriveTrain extends Subsystem {
 	
 	
 	public void stop() {
-		robotDrive.arcadeDrive(0, 1);
+		robotDrive.arcadeDrive(0, 0);
 	}
 
 }
