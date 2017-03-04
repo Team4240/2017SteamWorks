@@ -16,14 +16,16 @@ import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.CommandGroup;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
+import edu.wpi.first.wpilibj.I2C;
+import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+import edu.wpi.first.wpilibj.DriverStation;
 
 import org.usfirst.frc4240.Robot.commands.*;
 import org.usfirst.frc4240.Robot.subsystems.*;
-import org.usfirst.frc4240.Robot.RobotMap;
-import com.kauailabs.navx.frc.AHRS;
 import edu.wpi.first.wpilibj.Ultrasonic;
 import edu.wpi.first.wpilibj.CameraServer;
+import com.kauailabs.navx.frc.*;
 import com.ctre.*;
 
 /**
@@ -36,8 +38,8 @@ import com.ctre.*;
 public class Robot extends IterativeRobot {
   
 	AHRS ahrs;
-	
 	Command autonomousCommand;
+	//SendableChooser<CommandGroup> autoChooser;
     CameraServer server;
     
     public static OI oi;
