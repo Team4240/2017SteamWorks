@@ -48,5 +48,22 @@ public class claw extends Subsystem {
         // Set the default command for a subsystem here.
         // setDefaultCommand(new MySpecialCommand());
     }
+   
+    //This code controls the Gear Grabber
+    public void clawUp() {
+    	liftSolenoid.set(false);
+    }
+    
+    public void clawDown() {
+    	liftSolenoid.set(true);
+    }
+    
+    public void clawOpen() {
+    	gripSolenoid.set(true);
+    }
+    
+    public void clawClose() {
+    	gripSolenoid.set(false);
+    }
 }
 

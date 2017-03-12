@@ -94,8 +94,4 @@
 </dashboard>
 <live-window>
 </live-window>
-	<hidden field="Distance MM"/>
-	<hidden field="Distance Inches"/>
-	<hidden field="UltraSonic Enabled"/>
-	<hidden field="Distance"/>
 </xml>
