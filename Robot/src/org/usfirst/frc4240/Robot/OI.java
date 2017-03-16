@@ -70,7 +70,7 @@ public class OI {
         
         gearCamBtn = new JoystickButton(logitech, 2);
         gearCamBtn.whenPressed(new gearCam());
-        climbCamBtn = new JoystickButton(logitech, 1);
+        climbCamBtn = new JoystickButton(logitech, 3);
         climbCamBtn.whenPressed(new climbCam());
         upBtn = new JoystickButton(logitech, 6);
         upBtn.whileHeld(new clawUp());

@@ -82,7 +82,8 @@ public class Robot extends IterativeRobot {
         server = CameraServer.getInstance();
                 //server.setQuality(50);
         //the camera name (ex "cam0") can be found through the roborio web interface
-        server.startAutomaticCapture();
+        server.startAutomaticCapture("gearCam",0);
+        server.startAutomaticCapture("climbCam",1);
         
        // try {
 	          /* Communicate w/navX-MXP via the MXP SPI Bus.                                     */

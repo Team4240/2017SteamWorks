@@ -12,6 +12,9 @@
 package org.usfirst.frc4240.Robot.commands;
 import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc4240.Robot.Robot;
+import edu.wpi.first.wpilibj.RobotDrive;
+import org.usfirst.frc4240.Robot.RobotMap;
+
 
 /**
  *
@@ -36,16 +39,22 @@ public class autoFwdFromWall extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
+    	Robot.driveTrain.resetGyro();
     }
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
+    	double Kp = 0.03;
+    	double angle = Robot.driveTrain.getGyroAngle();
+    	float turnValue = (float) ((0 - angle) * Kp);
+    	
+    	RobotMap.driveTrainRobotDrive.arcadeDrive(-1.0,-turnValue);	
     }
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        return false;
-    }
+    	return Robot.driveTrain.getRearDistance() > 82.0;
+            }
 
     // Called once after isFinished returns true
     protected void end() {

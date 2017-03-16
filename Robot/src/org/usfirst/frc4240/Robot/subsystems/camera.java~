@@ -52,12 +52,12 @@ public class camera extends Subsystem {
     	 
     }
 	 public void gearCam() {
-		 server.startAutomaticCapture("cam0",0);
+		 server.startAutomaticCapture("cam0",2);
 	 }
 		 
 			
 	 public void climbCam() {
-	        server.startAutomaticCapture("cam1",1);
+	        server.startAutomaticCapture("cam1",3);
 	 }
 }
 

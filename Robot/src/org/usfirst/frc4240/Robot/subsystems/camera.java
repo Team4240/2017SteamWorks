@@ -51,13 +51,15 @@ public class camera extends Subsystem {
         // setDefaultCommand(new MySpecialCommand());
     	 
     }
-	 public void gearCam() {
-		 server.startAutomaticCapture("cam0",0);
+
+//REMOVE CODE UNTIL FURTHER TESTING CAN BE ACCOMPLISHED. THIS CODE CAUSES THE ROBORIO TO REBOOT
+    public void gearCam() {
+		//server.startAutomaticCapture("cam0",1);
 	 }
 		 
 			
 	 public void climbCam() {
-	        server.startAutomaticCapture("cam1",1);
+	     //   server.startAutomaticCapture("cam1",1);
 	 }
 }
 
